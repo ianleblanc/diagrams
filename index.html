@@ -1,0 +1,86 @@
+<style>
+#container{
+height:5000px;
+}
+
+#svg {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 640px;
+}
+
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+
+<script>
+
+window.onload = function () {
+
+var s = Snap("#svg");
+
+var triangle = s.select("#New_Layer_1");
+var cx = triangle.getBBox().cx;
+var cy = triangle.getBBox().cy;
+
+triangle.attr({ transform: 't-200 0'});
+
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        triangle.animate({transform: 't0 0'}, 2000);
+      }
+      if ($(this).scrollTop() < 50) {
+         triangle.animate({transform: 't-200 0'}, 2000);
+      }
+   });
+});
+
+
+
+
+}
+
+</script>
+
+<div id="container">
+
+
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3.780921in" height="1.214262in" version="1.1" viewBox="485.864166 173.159882 499.081604 160.282593">
+  <!--
+	Exported with Concepts: Smarter Sketching
+	Version: 669
+	iOS Version: 12.1
+	https://concepts.app/
+	-->
+  <title>Simple test</title>
+  <desc>Drawing exported from Concepts: Smarter Sketching</desc>
+  <g id="New_Layer_1" opacity="1.000">
+    <path id="STROKE_C5FE1222-9A25-4D09-B7DF-2F2C5C7F2538" opacity="1.000" fill="none" stroke="#d6dcde" stroke-width="2.550" stroke-opacity="1.000" stroke-linecap="round" stroke-linejoin="round" d="M 492.530 221.749 L 492.854 221.581 L 493.390 221.269 L 494.632 220.390 Q 495.102 220.058 499.834 215.987 Q 504.566 211.916 507.560 208.732 Q 510.554 205.547 511.693 204.187 Q 512.833 202.827 515.054 200.172 Q 517.276 197.516 519.142 195.585 Q 521.009 193.654 524.572 191.684 L 525.492 193.109 Q 525.623 193.533 526.110 199.906 Q 526.597 206.279 526.442 213.818 Q 526.288 221.357 526.123 226.272 Q 525.958 231.187 525.668 240.140 Q 525.377 249.093 525.302 259.180 Q 525.227 269.267 525.270 275.340 Q 525.314 281.412 525.416 285.812 Q 525.518 290.212 525.629 292.925 Q 525.740 295.639 525.476 299.500 L 525.586 302.211 "></path>
+    <path id="STROKE_4F6ED778-65A6-41F8-B790-2672EE9AFF89" opacity="1.000" fill="none" stroke="#d6dcde" stroke-width="2.550" stroke-opacity="1.000" stroke-linecap="round" stroke-linejoin="round" d="M 496.399 306.892 Q 498.311 306.391 499.601 306.103 Q 500.891 305.815 502.646 305.509 Q 504.401 305.202 504.590 305.142 Q 504.778 305.082 509.427 304.540 Q 514.076 303.997 516.899 303.825 Q 519.721 303.653 522.158 303.507 Q 524.595 303.361 526.116 303.273 Q 527.637 303.185 528.828 303.165 Q 530.018 303.145 530.590 303.154 Q 531.162 303.163 532.599 303.136 Q 534.035 303.110 536.107 303.094 Q 538.178 303.079 539.237 303.157 Q 540.295 303.234 541.439 303.347 Q 542.584 303.459 544.909 303.620 Q 547.235 303.782 549.406 304.059 Q 551.578 304.337 553.356 304.616 Q 555.135 304.894 556.121 305.110 Q 557.107 305.327 558.127 305.473 Q 559.146 305.619 560.006 305.961 L 564.185 306.672 "></path>
+  </g>
+  <g id="New_Layer_2" opacity="1.000">
+    <path id="STROKE_3131B2D3-8FC4-4B68-96A0-75787F0BEBB7" opacity="1.000" fill="none" stroke="#d6dcde" stroke-width="2.550" stroke-opacity="1.000" stroke-linecap="round" stroke-linejoin="round" d="M 625.771 192.441 L 626.803 191.946 Q 628.810 191.225 630.009 190.827 Q 631.207 190.429 632.029 190.232 Q 632.850 190.036 633.849 189.917 Q 634.849 189.798 636.844 189.572 Q 638.840 189.346 639.977 189.451 Q 641.113 189.556 642.370 189.742 Q 643.627 189.928 645.011 190.426 Q 646.396 190.923 646.562 191.009 Q 646.727 191.095 647.524 191.446 Q 648.321 191.797 650.841 193.173 Q 653.361 194.550 656.816 197.659 Q 660.270 200.769 662.383 203.384 Q 664.496 205.998 667.309 211.322 Q 670.123 216.645 671.320 219.962 Q 672.517 223.279 673.040 225.316 Q 673.562 227.353 674.132 240.522 Q 674.702 253.691 673.299 260.047 Q 671.896 266.402 670.285 270.613 Q 668.673 274.823 665.831 279.580 Q 662.989 284.337 661.176 286.685 Q 659.362 289.032 656.839 291.617 Q 654.315 294.202 653.104 295.279 Q 651.892 296.355 648.861 298.360 Q 645.829 300.365 642.373 301.733 Q 638.918 303.100 635.509 303.558 Q 632.101 304.015 628.542 303.426 Q 624.983 302.836 623.449 302.156 Q 621.915 301.475 621.301 301.085 Q 620.687 300.694 619.973 300.053 Q 619.259 299.411 618.485 298.292 Q 617.710 297.173 617.261 295.141 Q 616.813 293.108 616.864 292.010 Q 616.916 290.911 617.590 289.332 Q 618.265 287.753 618.998 286.860 Q 619.731 285.967 620.817 285.174 Q 621.903 284.382 622.027 284.287 Q 622.151 284.191 625.581 283.189 Q 629.011 282.187 630.863 281.982 Q 632.715 281.778 635.025 281.850 Q 637.335 281.922 642.412 282.924 Q 647.489 283.926 649.507 284.640 Q 651.526 285.354 652.879 286.004 Q 654.233 286.655 655.766 287.456 Q 657.300 288.258 658.989 289.407 Q 660.678 290.557 662.201 291.691 Q 663.724 292.825 665.189 294.053 Q 666.654 295.280 667.529 296.033 Q 668.405 296.786 672.023 300.260 Q 675.641 303.733 677.868 306.149 Q 680.095 308.564 681.946 310.707 Q 683.796 312.849 683.936 312.991 Q 684.076 313.134 684.762 313.967 Q 685.447 314.801 686.363 315.746 "></path>
+  </g>
+  <g id="New_Layer_3" opacity="1.000">
+    <path id="STROKE_369960D3-95BB-4D86-BC56-88D970535AE6" opacity="1.000" fill="none" stroke="#d6dcde" stroke-width="2.793" stroke-opacity="1.000" stroke-linecap="round" stroke-linejoin="round" d="M 732.715 179.949 L 841.661 179.950 L 841.661 216.974 L 732.715 216.974 Z"></path>
+    <path id="STROKE_10D34DA7-58E6-4D34-A617-D22BDF05A5C2" opacity="0.260" fill="#56a2ec" stroke="#56a2ec" stroke-width="0.500" stroke-opacity="1.000" stroke-linecap="round" stroke-linejoin="round" d="M 734.459 235.737 L 843.405 235.737 L 843.405 272.762 L 734.459 272.762 Z"></path>
+    <path id="STROKE_FCC2D2E9-BFFB-4E29-8D8B-73FF2508FB99" opacity="0.260" fill="#56a2ec" stroke="#56a2ec" stroke-width="0.500" stroke-opacity="1.000" stroke-linecap="round" stroke-linejoin="round" d="M 734.574 291.525 L 843.520 291.525 L 843.520 328.550 L 734.574 328.550 Z"></path>
+  </g>
+  <g id="New_Layer_4" opacity="1.000">
+    <g id="LABEL_3A58BC23-BC17-4033-A40B-0F1F1445EEB9" opacity="1.000" transform="matrix(6.983266 0.000000 0.000000 6.983266 931.169922 253.313232)">
+      <text x="0" y="0" text-anchor="middle" alignment-baseline="mathematical" font-size="24.000" font-weight="lighter" fill="#d6dcde" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+        <tspan x="0" dy="0.000em">4</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
+
+</div>
