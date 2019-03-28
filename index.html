@@ -19,33 +19,24 @@ height:5000px;
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+<script src="svg-scroll.min.js"></script>
 
 <script>
 
 window.onload = function () {
 
-var s = Snap("#svg");
-
-var triangle = s.select("#New_Layer_1");
-var cx = triangle.getBBox().cx;
-var cy = triangle.getBBox().cy;
-
-triangle.attr({ transform: 't-200 0'});
-
-$(function() {
-   $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-        triangle.animate({transform: 't0 0'}, 2000);
-      }
-      if ($(this).scrollTop() < 50) {
-         triangle.animate({transform: 't-200 0'}, 2000);
-      }
-   });
-});
 
 
+var layer1 = Snap.select("#New_Layer_1");
 
 
+layer1.attr({ opacity: '0'});
+
+window.addEventListener("scroll", function(e) {
+    layer1.changeOnScroll([0, 0.1], 'opacity', [0, 1]);
+
+
+};
 }
 
 </script>
