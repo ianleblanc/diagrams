@@ -43,43 +43,43 @@ window.onload = function () {
 
   // for (i = 1; i<4; i++) {
   //   var layers [];
-  //   layers.push("layer"+i+"= Snap.select('#Layer_Copy_'"+i+"')")
+  //   layers.push("layer"+i+"= Snap.select('#New_Layer_'"+i+"')")
   // }
 
 
 
-  var layer1 = Snap.select('#Layer_Copy_1');
-  var layer2 = Snap.select('#Layer_Copy_2');
-  var layer3 = Snap.select('#Layer_Copy_3');
-  var layer4 = Snap.select('#Layer_Copy_4');
-  var layer5 = Snap.select('#Layer_Copy_5');
-  var layer6 = Snap.select('#Layer_Copy_6');
-  var layer7 = Snap.select('#Layer_Copy_7');
-  var layer8 = Snap.select('#Layer_Copy_8');
-  var layer9 = Snap.select('#Layer_Copy_9');
-  var layer10 = Snap.select('#Layer_Copy_10');
-  var layer11 = Snap.select('#Layer_Copy_11');
-  var layer12 = Snap.select('#Layer_Copy_12');
-  var layer13 = Snap.select('#Layer_Copy_13');
-  var layer14 = Snap.select('#Layer_Copy_14');
-  var layer15 = Snap.select('#Layer_Copy_15');
-  var layer16 = Snap.select('#Layer_Copy_16');
-  var layer17 = Snap.select('#Layer_Copy_17');
-  var layer18 = Snap.select('#Layer_Copy_18');
-  var layer19 = Snap.select('#Layer_Copy_19');
-  var layer20 = Snap.select('#Layer_Copy_20');
-  var layer21 = Snap.select('#Layer_Copy_21');
-  var layer22 = Snap.select('#Layer_Copy_22');
-  var layer23 = Snap.select('#Layer_Copy_23');
-  var layer24 = Snap.select('#Layer_Copy_24');
-  var layer25 = Snap.select('#Layer_Copy_25');
-  var layer26 = Snap.select('#Layer_Copy_26');
-  var layer27 = Snap.select('#Layer_Copy_27');
-  var layer28 = Snap.select('#Layer_Copy_28');
-  var layer29 = Snap.select('#Layer_Copy_29');
-  var layer30 = Snap.select('#Layer_Copy_30');
-  var layer31 = Snap.select('#Layer_Copy_31');
-  var layer32 = Snap.select('#Layer_Copy_32');
+  var layer1 = Snap.select('#New_Layer_1');
+  var layer2 = Snap.select('#New_Layer_2');
+  var layer3 = Snap.select('#New_Layer_3');
+  var layer4 = Snap.select('#New_Layer_4');
+  var layer5 = Snap.select('#New_Layer_5');
+  var layer6 = Snap.select('#New_Layer_6');
+  var layer7 = Snap.select('#New_Layer_7');
+  var layer8 = Snap.select('#New_Layer_8');
+  var layer9 = Snap.select('#New_Layer_9');
+  var layer10 = Snap.select('#New_Layer_10');
+  var layer11 = Snap.select('#New_Layer_11');
+  var layer12 = Snap.select('#New_Layer_12');
+  var layer13 = Snap.select('#New_Layer_13');
+  var layer14 = Snap.select('#New_Layer_14');
+  var layer15 = Snap.select('#New_Layer_15');
+  var layer16 = Snap.select('#New_Layer_16');
+  var layer17 = Snap.select('#New_Layer_17');
+  var layer18 = Snap.select('#New_Layer_18');
+  var layer19 = Snap.select('#New_Layer_19');
+  var layer20 = Snap.select('#New_Layer_20');
+  var layer21 = Snap.select('#New_Layer_21');
+  var layer22 = Snap.select('#New_Layer_22');
+  var layer23 = Snap.select('#New_Layer_23');
+  var layer24 = Snap.select('#New_Layer_24');
+  var layer25 = Snap.select('#New_Layer_25');
+  var layer26 = Snap.select('#New_Layer_26');
+  var layer27 = Snap.select('#New_Layer_27');
+  var layer28 = Snap.select('#New_Layer_28');
+  var layer29 = Snap.select('#New_Layer_29');
+  var layer30 = Snap.select('#New_Layer_30');
+  var layer31 = Snap.select('#New_Layer_31');
+  var layer32 = Snap.select('#New_Layer_32');
 
   var layers = [];
 
