@@ -11,6 +11,13 @@ height:5000px;
   position: fixed;
 }
 
+h1{
+text-align: center;
+line-height: 200px;
+font: verdana;
+color: #666;
+}
+
 #svg {
   position: fixed;
   margin: auto;
@@ -84,11 +91,18 @@ window.onload = function () {
 
   //layer1.attr({ opacity: '1'});
 
+  var all = Snap.select('#svg');
+
+  all.attr({opacity:'0'});
+
+  
+
+
   $(window).on('scroll', function(e){
     var reveal = Math.floor(pageYOffset/110)
-    document.getElementById('showScroll').innerHTML = reveal + 'px';
+    // document.getElementById('showScroll').innerHTML = 'scroll down for animation'+ reveal ;
     var position = $(window).scrollTop();
-    
+    all.attr({opacity:'1'});
     for (i = 0; i < 32; i++) {
       layers[i].attr({opacity:reveal-i});
     };
@@ -115,9 +129,9 @@ window.onload = function () {
 
 </script>
 
+<h1>Scroll Down ↓</h1>
 
-
-<div id="showScroll"></div>
+<!-- <div id="showScroll"></div> -->
 
 <svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7.168119in" height="5.142324in" version="1.1" viewBox="209.904083 389.163940 946.191650 678.786804">
   <!--
